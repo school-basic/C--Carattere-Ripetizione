@@ -1,0 +1,17 @@
+//_school.basic_
+
+string A = TxtA.Text;
+if (TxtB.Text.Length > 1)
+MessageBox.Show("LUNGHEZZA CARATTERE ERRATO");
+else
+{
+int count = 0;
+char B = Convert.ToChar(TxtB.Text);
+int LUN = A.Length;
+for (int I =0; I < LUN;I++)
+{
+if (B == A[I])
+count++;
+}
+MessageBox.Show("SI RIPETE:" + count);
+}
